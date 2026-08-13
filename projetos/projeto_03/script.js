@@ -15,7 +15,8 @@ const frase = document.querySelector (".frase")
 const btnFrase = document.querySelector (".btnFrase")
 
 function mostrarFrase () {
-    frase.textContent = Math.random()
+    let indice = Math.floor(Math.random() * frases.length)
+    frase.textContent = frases [indice]
 }
 
 btnFrase.addEventListener("click",function(){
