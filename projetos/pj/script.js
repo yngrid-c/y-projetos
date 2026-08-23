@@ -16,19 +16,27 @@ termoFinal()
 
 const senhaCorreta = "jogos"
 let btnE = document.querySelector (".btnEnviar")
+let inputText = document.querySelector (".inputText")
+inputText.maxLength = 5
+let posicaoLetra = 0
 
 btnE.addEventListener ("click", function(){
     verificar()
+})
+
+inputText.addEventListener ("keydown", function (event) {
+    if (event.key === "Enter")
+        verificar()
 })
 
 function verificar (){
     let input = document.querySelector (".inputText")
     let inputValue = input.value
 
-    let senha = document.querySelectorAll(".quadrado")
+    let quadrado = document.querySelectorAll(".quadrado")
 
     for (let i = 0; i < 5; i++){
-        let num = senha[i]
+        let num = quadrado[posicaoLetra]
         num.classList.remove("certo", "erro", "meioCerto")
         num.textContent = inputValue[i]
 
@@ -49,5 +57,10 @@ function verificar (){
         else {
             num.classList.add("erro")
         }
+        posicaoLetra++
     }
+
+    //{o bagulho do certo ou errado fica aqui}
+
+    input.value = ""
 }

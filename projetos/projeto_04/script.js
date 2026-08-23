@@ -18,7 +18,9 @@ function verificar() {
     for (let i = 0 ; i < 5; i++) {
 
         // sleceniona um dos quadrdado, coloco a variavel quadrado no lugar de senha.children ..., o [ i é uma dos 5 quadra]
-        let number = senha.children[i]
+        
+        // n preciso do children, o senha é na verdade os quardainhos( no lugar do i colocar posiçao letra !!!!! 2)
+        let number = senha.children[i] 
         number.classList.remove("certo", "erro")
 
         //guarda dentro do quadrado apenas um dos digitos q foi citado
@@ -42,7 +44,9 @@ function verificar() {
         else {
             number.classList.add("erro")
         }
-    }
 
+        // posicaoletra ++ !!!!! 3
+    }
+    //input.value = "" !!!!!! 4 
 }
 
