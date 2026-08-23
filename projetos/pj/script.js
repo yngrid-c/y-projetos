@@ -29,7 +29,7 @@ function verificar (){
 
     for (let i = 0; i < 5; i++){
         let num = senha[i]
-        num.classList.remove("certo", "erro")
+        num.classList.remove("certo", "erro", "meioCerto")
         num.textContent = inputValue[i]
 
         if (inputValue[i] == senhaCorreta[i]){
