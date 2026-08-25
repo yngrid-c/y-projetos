@@ -62,3 +62,17 @@ function renderizar() {
         })
     })
 }
+
+const btnFechar = document.querySelector(".btnFechar");
+
+// 2. Cria as pontes para os modais que guardam as imagens
+const modalVitoria = document.querySelector("#modalVitoria");
+const modalDerrota = document.querySelector("#modalDerrota");
+
+// 3. Quando o usuário clicar no "X", executa a função de fechar
+btnFechar.addEventListener("click", function() {
+    
+    // Remove a classe "is-active", fazendo a imagem sumir da tela
+    modalVitoria.classList.remove("is-active");
+    modalDerrota.classList.remove("is-active");
+});

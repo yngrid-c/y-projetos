@@ -46,7 +46,30 @@ function verificar() {
         }
 
         // posicaoletra ++ !!!!! 3
+
+        
     }
-    //input.value = "" !!!!!! 4 
+        
+/*  // ADICIONADO: Soma 1 tentativa e mostra na tela (Ex: 1/6)
+    numTentativaAtual++
+    contadorTexto.textContent = numTentativaAtual + "/6"
+
+    input.value = ""*/
 }
 
+
+/* ADICIONADO: Função de reiniciar usando a mesma lógica de loop do seu curso
+btnReiniciar.addEventListener("click", function() {
+    posicaoLetra = 0
+    numTentativaAtual = 0
+    contadorTexto.textContent = "0/6"
+    inputText.value = ""
+    
+    let quadrado = document.querySelectorAll(".quadrado")
+    
+    // Loop tradicional para limpar o texto e as classes de todos os 30 quadrados
+    for (let i = 0; i < 30; i++) {
+        quadrado[i].textContent = ""
+        quadrado[i].classList.remove("certo", "erro", "meioCerto")
+    }
+})*/
