@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0A1B2D;
+}
+
+header {
+    background-color: #081728;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 120px;
+    color: white;
+    border: 3px solid #000612;
+    gap: 20px;
+}
+
+
+
+.acerteSenha {
+    width: 400px;
+    margin: 40px auto;
+    background-color: #081625;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 15px;
+    border: 10px;
+    border-radius: 20px;
+}
+
+.quadrado{
+    width: 70px;
+    height: 70px;
+    background-color: #06111F;
+    border: 3px solid #2B4056;
+    border-radius: 7px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 34px;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#FFFFFF ;
+}
+.inputText{
+    width: 410px;
+    height: 44px;
+    text-align: center;
+    background-color: #06111F;
+    border: 3px solid #2B4056;
+    color: #5D5D5D;
+    font-weight: bold;
+    font-size: 25px;
+    border-radius: 7px;
+}
+
+.btnEnviar{
+    width: 410px;
+    height: 33px;
+    text-align: center;
+    background-color:#2B4056;
+    border: 3px solid #06111F;
+    color: #081625;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 7px;
+}
+
+.certo{
+    background-color: #238C49;
+}
+
+.erro {
+    background-color: #06111F;
+}
+
+.meioCerto{
+    background-color: #CB9D21;
+}
+
+
+
+.tentativa {
+    width: 200px;
+    height: 50px;
+    margin: 10px auto;
+    background-color: #0A1B2D;
+    border: 3px solid #051222;
+    border-radius: 10px;
+    width: 240px;
+    height: 143px;
+    text-align: center;
+    font-weight: bold;
+    color: #9FB5C9;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.among{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    max-width: 400px;
+    text-align: center;
+}
+
+
+
+.among p {
+  width: 100%;
+  text-align: right;
+}
+
+.num {
+    color: #238E4B;
+    font-weight: bold;
+    font-size: 54px;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.btnReiniciar{
+    position: relative;
+    width: 44px;
+    height: 44px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: 70px;
+    left: 480px;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    background-image: url(assets/img-04.png);
+}
+
+
+
+.btnReiniciar:hover img{
+    background-image: url(assets/img-05.png);
+    bottom: 50px;
+    left: 0px;
+    background-color: #081728;
+    border-radius: 200px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
