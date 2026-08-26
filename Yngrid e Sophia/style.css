@@ -14,7 +14,7 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 10px 120px;
+    padding: 6px 20px;
     color: white;
     border: 3px solid #000612;
     gap: 20px;
@@ -91,9 +91,7 @@ header {
 
 
 .tentativa {
-    width: 200px;
-    height: 50px;
-    margin: 10px auto;
+    margin: 0px auto;
     background-color: #0A1B2D;
     border: 3px solid #051222;
     border-radius: 10px;
@@ -109,7 +107,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 5px;
+    gap: 0px;
 }
 
 .among{
@@ -118,14 +116,22 @@ header {
     gap: 10px;
     flex-wrap: wrap;
     max-width: 400px;
-    text-align: center;
+    text-align: left;
+}
+
+.among img{
+    height: 180px;
+    width: auto;
+    position: static;
 }
 
 
-
 .among p {
-  width: 100%;
-  text-align: right;
+    color: #9FB5C9;
+    width: 100%;
+    text-align: right;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .num {
@@ -138,30 +144,24 @@ header {
 
 
 .btnReiniciar{
-    position: relative;
+    position: absolute;
+    top: 20px;
+    right: 20px;
     width: 44px;
     height: 44px;
     background-size: contain;
+    background-color: transparent;
     background-repeat: no-repeat;
     background-position: center;
-    bottom: 70px;
-    left: 480px;
     border: none;
     cursor: pointer;
-    background: transparent;
-    background-image: url(assets/img-04.png);
+    background-image: url(assets/img-02.png);
 }
 
 
 
-.btnReiniciar:hover img{
-    background-image: url(assets/img-05.png);
-    bottom: 50px;
-    left: 0px;
-    background-color: #081728;
-    border-radius: 200px;
-    border: none;
-    cursor: pointer;
+.btnReiniciar:hover {
+    background-image: url(assets/img-03.png);
 }
 
 

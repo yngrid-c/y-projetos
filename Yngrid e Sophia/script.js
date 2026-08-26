@@ -18,7 +18,7 @@ const arrayPalavras = [
     "jogos",
     "porta",
     "amora",
-    "carros",
+    "carro",
     "mundo"
     
 ]
@@ -59,26 +59,29 @@ inputText.addEventListener ("keydown", function (event) {
 function verificar (){
     
     let input = document.querySelector (".inputText")
-    let inputValue = input.value
+    let texto = input.value.trim()
     
+    if (texto.length < 5) {
+        return
+    }
 
     let quadrado = document.querySelectorAll(".quadrado")
 
     for (let i = 0; i < 5; i++){
         let num = quadrado[posicaoLetra]
         num.classList.remove("certo", "erro", "meioCerto")
-        num.textContent = inputValue[i]
+        num.textContent = texto[i]
 
-        if (inputValue[i] == palavraSorteada[i]){
+        if (texto[i] == palavraSorteada[i]){
             num.classList.add("certo")
         } 
 
         else if (
-            inputValue[i] == palavraSorteada[0] || 
-            inputValue[i] == palavraSorteada[1] || 
-            inputValue[i] == palavraSorteada[2] || 
-            inputValue[i] == palavraSorteada[3] || 
-            inputValue[i] == palavraSorteada[4]
+            texto[i] == palavraSorteada[0] || 
+            texto[i] == palavraSorteada[1] || 
+            texto[i] == palavraSorteada[2] || 
+            texto[i] == palavraSorteada[3] || 
+            texto[i] == palavraSorteada[4]
         ) {
             num.classList.add("meioCerto")
         }
@@ -103,6 +106,7 @@ btnReiniciar.addEventListener("click", function() {
     atual = 0
     numero.textContent = "0"
     inputText.value = ""
+    sortearFrase()
     
     let quadrado = document.querySelectorAll(".quadrado")
     
