@@ -155,17 +155,180 @@ header {
     background-position: center;
     border: none;
     cursor: pointer;
-    background-image: url(assets/img-02.png);
+    background-image: url(./assets/img-02.png);
+    z-index: 999;
 }
 
 
 
 .btnReiniciar:hover {
-    background-image: url(assets/img-03.png);
+    background-image: url(./assets/img-03.png);
 }
 
+.SYmodal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
 
+.SYmodal.is-active {
+    display: flex;
+}
 
+.SYconteiter1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url(./assets/img-04.png);
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
 
+.SYconteiter2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url(./assets/img-05.png);
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
 
+.SYconteiter1 h1,
+.SYconteiter2 h1 {
+    color: white;
+    font-size: 50px;
+    font-family:'Franklin Gothic Medium','Arial Narrow',Arial,sans-serif;
+}
+
+.SYconteiter1 > img,
+.SYconteiter2 > img {
+    width: 250px;
+    margin-top: 40px;
+}
+
+.SYbtnFechar,
+.SYbtnFechar2 {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.SYbtnFechar img,
+.SYbtnFechar2 img {
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+}
+.SYconteiter1 h1{
+    color: #00C0DD;
+}
+.SYconteiter2 h1{
+    color: #DE0000;
+}
+
+@media (max-width: 540px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 20px 10px;
+        position: relative;
+    }
+
+    .among img {
+        height: 130px;
+        position: static;
+    }
+    .among {
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .among p {
+        text-align: center;
+    }
+
+    .tentativa {
+        margin: 10px auto ;
+        width: 160px;
+        height: 100px;
+    }
+
+    .btnReiniciar {
+        top: 10px;
+        right: 10px;
+    }
+
+    .acerteSenha {
+        width: 395px; 
+        max-width: 300px;
+        margin: 20px auto;
+        padding: 8px;
+        gap: 4px;
+    }
+    .quadrado {
+        width: 52px;
+        height: 52px;
+        font-size: 26px;
+    }
+
+    .inputText {
+        width: 100%;
+        height: 38px;
+        font-size: 18px;
+    }
+
+    .btnEnviar {
+        width: 100%;
+        height: 32px;
+        font-size: 15px;
+    }
+
+    .inputText,
+    .btnEnviar {
+        width: 100%;
+    }
+
+    .SYconteiter1 > img,
+    .SYconteiter2 > img {
+        width: 150px;
+        margin-top: 20px;
+
+    }
+    .SYconteiter1,
+    .SYconteiter2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+    }
+
+    .SYconteiter1 h1{
+        font-size: 100px;
+    }
+    .SYconteiter2 h1{
+        font-size: 100px;
+    }
+}
 
