@@ -1,0 +1,24 @@
+h1{
+    text-align: center;
+    line-height: 200px;
+    color: white;
+}
+.quadro{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+.quadroo{
+    width: 200px;
+    height: 200px;
+    background-color: #FFCC00;
+}
+#2{
+    text-align: center;
+    line-height: 200px;
+}
+.quadrooo{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+}
